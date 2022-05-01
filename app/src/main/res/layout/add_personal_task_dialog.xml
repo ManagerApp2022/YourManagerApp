@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="333dp"
+        android:layout_height="478dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/addTaskbtn"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/AppDarkBrown"
+            android:fontFamily="@font/cairo_semibold"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/addPersonalTaskDateTxt"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/addPersonalTaskDateTxt"
+            app:layout_constraintTop_toBottomOf="@+id/addTaskGroupUsernameTxt" />
+
+        <TextView
+            android:id="@+id/taskDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:text="Add Task"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="363dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.717"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taskDialogTitle"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <EditText
+            android:id="@+id/addPersonalTaskNameTxt"
+            android:layout_width="287dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_corners_dialog"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="   Task Name"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taskDialogTitle"
+            app:layout_constraintVertical_bias="0.062" />
+
+        <Button
+            android:id="@+id/addPersonalTaskDateTxt"
+            android:layout_width="287dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rounded_corners_dialog"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:text="Date"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="@+id/addPersonalTaskNameTxt"
+            app:layout_constraintStart_toStartOf="@+id/addPersonalTaskNameTxt"
+            app:layout_constraintTop_toBottomOf="@+id/addPersonalTaskNameTxt" />
+
+        <Button
+            android:id="@+id/addPersonalTaskTimeTxt"
+            android:layout_width="287dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners_dialog"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:text="Time"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="@+id/addPersonalTaskNameTxt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/addPersonalTaskNameTxt"
+            app:layout_constraintTop_toBottomOf="@+id/addPersonalTaskDateTxt" />
+
+        <EditText
+            android:id="@+id/addTaskGroupUsernameTxt"
+            android:layout_width="287dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_corners_dialog"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="   Task Owner"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/addPersonalTaskNameTxt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/addPersonalTaskNameTxt"
+            app:layout_constraintTop_toBottomOf="@+id/addPersonalTaskDifficultySeekbar"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <ProgressBar
+            android:id="@+id/addTaskProgress"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="186dp"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.629" />
+
+        <SeekBar
+            android:id="@+id/addPersonalTaskPrioritySeekbar"
+            android:layout_width="206dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="@+id/addPersonalTaskTimeTxt"
+            app:layout_constraintHorizontal_bias="0.604"
+            app:layout_constraintStart_toStartOf="@+id/addPersonalTaskTimeTxt"
+            app:layout_constraintTop_toTopOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <SeekBar
+            android:id="@+id/addPersonalTaskDifficultySeekbar"
+            android:layout_width="206dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="@+id/addPersonalTaskTimeTxt"
+            app:layout_constraintHorizontal_bias="0.604"
+            app:layout_constraintStart_toStartOf="@+id/addPersonalTaskTimeTxt"
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Priority"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addPersonalTaskTimeTxt"
+            app:layout_constraintVertical_bias="0.063" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Difficulty"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.138" />
+
+        <TextView
+            android:id="@+id/addPersonalTaskPriorityTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="100%"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintStart_toEndOf="@+id/addPersonalTaskPrioritySeekbar"
+            app:layout_constraintTop_toBottomOf="@+id/addPersonalTaskTimeTxt"
+            app:layout_constraintVertical_bias="0.063" />
+
+        <TextView
+            android:id="@+id/addPersonalTaskDifficultyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="100%"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/addPersonalTaskDifficultySeekbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintStart_toEndOf="@+id/addPersonalTaskPrioritySeekbar"
+            app:layout_constraintTop_toTopOf="@+id/addPersonalTaskDifficultySeekbar"
+            app:layout_constraintVertical_bias="0.063" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
